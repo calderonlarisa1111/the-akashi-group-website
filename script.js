@@ -1,5 +1,35 @@
 const canvas = document.getElementById("signalCanvas");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.getElementById("site-nav");
+
+if (navToggle && navLinks) {
+  function setNavOpen(open) {
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+    navLinks.classList.toggle("is-open", open);
+  }
+
+  navToggle.addEventListener("click", () => {
+    setNavOpen(navToggle.getAttribute("aria-expanded") !== "true");
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setNavOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 680) {
+      setNavOpen(false);
+    }
+  });
+}
 
 if (canvas && !prefersReducedMotion) {
   const context = canvas.getContext("2d");
@@ -42,6 +72,11 @@ if (canvas && !prefersReducedMotion) {
   }
 
   function draw(time) {
+    if (document.hidden) {
+      requestAnimationFrame(draw);
+      return;
+    }
+
     const width = canvas.clientWidth;
     const height = canvas.clientHeight;
     context.clearRect(0, 0, width, height);

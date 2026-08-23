@@ -1,6 +1,6 @@
 # The Akashi Group Static Site
 
-This folder is the publish-ready website for The Akashi Group.
+This repository is the publish-ready website for The Akashi Group.
 
 Upload the contents of this folder as the public site root. There is no build step.
 
@@ -8,13 +8,13 @@ Upload the contents of this folder as the public site root. There is no build st
 
 - `index.html` - the full one-page site
 - `styles.css` - site styling
-- `script.js` - animated hero canvas
-- `assets/` - logo and hero artwork
+- `script.js` - animated hero canvas and mobile navigation
+- `assets/` - logo, hero artwork, and favicons
 - `robots.txt` and `sitemap.xml` - search engine files
 - `CNAME` - custom domain file for hosts that use it
 - `_headers` - security and cache headers for Cloudflare Pages and Netlify
 - `vercel.json` - equivalent headers for Vercel
-- `PROJECT-BRIEF.md` - project notes from the build thread
+- `PROJECT-BRIEF.md` - brand and section notes
 
 ## Domain
 
@@ -22,14 +22,12 @@ Primary URL: `https://www.theakashigroup.com/`
 
 The site metadata, sitemap, robots file, and `CNAME` are already set for `www.theakashigroup.com`.
 
-## Pre-Publish Check
+## Contact
 
-Confirm the contact mailbox before launch:
+- Email: `info@akashigroup.com`
+- Phone: `(571) 456-0838`
 
-- Current email: `hello@theakashigroup.com`
-- Used in: `index.html` structured data and contact button
-
-If that mailbox is not active, replace it before publishing.
+Used in `index.html` (contact section, footer, and structured data).
 
 ## Recommended Path
 
@@ -59,8 +57,8 @@ If you also want `theakashigroup.com` without `www`, add it as a second domain i
 After DNS and HTTPS are active:
 
 1. Visit `https://www.theakashigroup.com/`.
-2. Test desktop and mobile layouts.
-3. Confirm the header logo and hero image load.
-4. Confirm the contact email opens correctly.
+2. Test desktop and mobile layouts, including the mobile menu.
+3. Confirm the header logo, favicon, and hero image load.
+4. Confirm the contact email and phone number work.
 5. Check `https://www.theakashigroup.com/sitemap.xml`.
 6. Submit the sitemap in Google Search Console when ready.

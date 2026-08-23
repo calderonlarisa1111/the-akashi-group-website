@@ -2,16 +2,9 @@
 
 ## Current Status
 
-The prototype website for The Akashi Group has been designed, refined, and prepared for publishing as a static site.
+The Akashi Group website is a publish-ready static one-page marketing site for `https://www.theakashigroup.com/`.
 
-The live-ready site package is here:
-
-- `C:\Users\Tony\Documents\Codex\2026-07-08\hi\outputs\theakashigroup-live`
-- `C:\Users\Tony\Documents\Codex\2026-07-08\hi\outputs\theakashigroup-live-package.zip`
-
-The working prototype with extra exploration files is here:
-
-- `C:\Users\Tony\Documents\Codex\2026-07-08\hi\outputs\akashi-prototype`
+There is no build step. Upload the repository root as the public site, or deploy through GitHub Pages, Cloudflare Pages, Netlify, or Vercel.
 
 ## Brand Direction
 
@@ -21,14 +14,14 @@ Company name:
 
 Core positioning:
 
-- Bridging the gap between ideas, intelligent systems, and everyday work.
+- Bridging ideas, intelligent systems, and everyday work.
 
 Site message:
 
 - The Akashi Group helps people and businesses turn scattered processes, promising concepts, and unfinished workflows into elegant tools that people can actually use.
-- The site now includes a stronger point of view around responsible AI and automation: AI helps people build fast, but real systems still require security, compliance, data ownership, role-based access, audit trails, approvals, and operational continuity.
+- The site holds a point of view around responsible AI and automation: AI helps people build fast, but real systems still require security, compliance, data ownership, role-based access, audit trails, approvals, and operational continuity.
 
-Key phrase added:
+Key phrase:
 
 - "That kind of architecture takes perspective. Let us be the bridge, so you can keep building the dream."
 
@@ -38,22 +31,22 @@ Key phrase added:
 - Services section
 - Responsible architecture / "The missing middle" section
 - Positioning statement
-- App shelf for future products
-- SEO keyword section
+- App shelf for products in development
+- Who we work with
 - Contact section
 
 ## Logo And Visual Assets
 
-Provided wordmark files were used and cleaned for the website:
-
 - `assets/akashi-wordmark-white-clean.png`
 - `assets/akashi-wordmark-dark-clean.png`
-
-Hero image:
-
 - `assets/akashi-hero-bg.png`
+- `assets/favicon.ico`
+- `assets/favicon-16x16.png`
 
-Earlier generated logo options are retained only in the prototype folder, not the live-ready folder.
+## Contact
+
+- Email: `info@akashigroup.com`
+- Phone: `(571) 456-0838`
 
 ## Publishing Notes
 
@@ -61,7 +54,7 @@ Domain:
 
 - `https://www.theakashigroup.com/`
 
-The live-ready folder includes:
+The site root includes:
 
 - `index.html`
 - `styles.css`
@@ -71,6 +64,7 @@ The live-ready folder includes:
 - `sitemap.xml`
 - `CNAME`
 - `_headers`
+- `vercel.json`
 - `README-PUBLISH.md`
 
 Recommended hosts:
@@ -79,22 +73,3 @@ Recommended hosts:
 - Netlify
 - Vercel
 - GitHub Pages
-
-The live-ready folder should be uploaded as the public site root.
-
-## Placeholder To Confirm
-
-The contact email currently used is:
-
-- `hello@theakashigroup.com`
-
-Confirm this mailbox exists before publishing, or replace it with the preferred contact email.
-
-## Suggested Next Steps
-
-1. Choose the hosting provider.
-2. Upload `theakashigroup-live` or `theakashigroup-live-package.zip`.
-3. Point `www.theakashigroup.com` DNS to the host.
-4. Confirm HTTPS is active.
-5. Test desktop and mobile views.
-6. Replace placeholder app cards when real products are ready.
